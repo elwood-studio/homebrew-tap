@@ -1,0 +1,26 @@
+name: "release"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update:
+    name: "Update Release"
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: actions/checkout@v2
+      - name: Configure Git User
+        run: |
+          git config --global user.email "security@elwood.studio"
+          git config --global user.name "@$GITHUB_ACTOR"
+    
+      - name: Setup Deno
+        uses: denolib/setup-deno@v2
+        with:
+          deno-version: v1.x
+
+      - run: deno run -a ./scripts/build.ts
+      - run: git add .
+      - run: git commit -m "Update release"
+      - run: git push 
+   

@@ -1,24 +1,21 @@
-# typed: false
-# frozen_string_literal: true
-
 class Elwood < Formula
     desc "Elwood CLI"
     homepage "https://elwood.studio/docs/cli"
-    version "0.1.18"
+    version "0.1.25"
     license "MIT"
   
     on_macos do
       if Hardware::CPU.arm?
-        url "https://github.com/elwood-studio/cli/releases/download/0.1.18/elwood-macos-x64.zip"
-        sha256 "a9e163f0ccfa945edd721696fccb9a700798ee1017c2a8cdd887968d52c27adf"
+        url "https://github.com/elwood-studio/cli/releases/download/0.1.25/elwood-macos-x64.zip"
+        sha256 "d7ac40eeec60e696ff2792d41e895386a0502ad6d4f4c28785a506a881557b81"
   
         def install
           bin.install "elwood"
         end
       end
       if Hardware::CPU.intel?
-        url "https://github.com/elwood-studio/cli/releases/download/0.1.18/elwood-macos-x64.zip"
-        sha256 "a9e163f0ccfa945edd721696fccb9a700798ee1017c2a8cdd887968d52c27adf"
+        url "https://github.com/elwood-studio/cli/releases/download/0.1.25/elwood-macos-x64.zip"
+        sha256 "d7ac40eeec60e696ff2792d41e895386a0502ad6d4f4c28785a506a881557b81"
   
         def install
           bin.install "elwood"
@@ -28,16 +25,16 @@ class Elwood < Formula
   
     on_linux do
       if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-        url "https://github.com/elwood-studio/cli/releases/download/0.1.18/elwood-linux-arm64.zip"
-        sha256 "5fe4ae51261c06120d6e06c338e5742c5ed0d4143b30de1e69c40100a782a300"
+        url "https://github.com/elwood-studio/cli/releases/download/0.1.25/elwood-linux-arm64.zip"
+        sha256 "7af9670c25c674e49bcbe44417b5846745671066be12e263fa4915f8af4e1377"
   
         def install
           bin.install "elwood"
         end
       end
       if Hardware::CPU.intel?
-        url "https://github.com/elwood-studio/cli/releases/download/0.1.18/elwood-linux-x64.zip"
-        sha256 "ea3bf1815ac21633ed33bcdd90c180121bdc96330d3c0173dcc0f0fbde0f41da"
+        url "https://github.com/elwood-studio/cli/releases/download/0.1.25/elwood-linux-x64.zip"
+        sha256 "890658a4e3b45fefc0ff7ec7acc3a3468f6dadf62357439f2d5959e027de1552"
   
         def install
           bin.install "elwood"
