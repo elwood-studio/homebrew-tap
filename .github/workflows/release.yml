@@ -19,7 +19,7 @@ jobs:
         with:
           deno-version: v1.x
 
-      - run: deno run -a ./scripts/build.ts
+      - run: deno run -A ./scripts/build.ts
       - run: git add .
       - run: git commit -m "Update release"
       - run: git push 
