@@ -1,7 +1,7 @@
 class Elwood < Formula
     desc "Elwood CLI"
     homepage "https://elwood.studio/docs/cli"
-    version "0.1.25"
+  version "0.1.25"
     license "MIT"
   
     on_macos do
