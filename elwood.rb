@@ -1,21 +1,21 @@
 class Elwood < Formula
   desc "Elwood CLI"
   homepage "https://elwood.studio/docs/cli"
-  version "0.1.37"
+  version "0.1.44"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/elwood-studio/cli/releases/download/0.1.37/elwood-macos-x64.zip"
-      sha256 "6d9aa1975c5948eb10f881740f400cba03c68d3eb29dae24db46b51ad36782f5"
+      url "https://github.com/elwood-studio/cli/releases/download/0.1.44/elwood-macos-x64.zip"
+      sha256 "afd756babdfc9eba684949b9b104da13fb67fe88c6296dac934b00e60dade94a"
 
       def install
         bin.install "elwood"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwood-studio/cli/releases/download/0.1.37/elwood-macos-x64.zip"
-      sha256 "6d9aa1975c5948eb10f881740f400cba03c68d3eb29dae24db46b51ad36782f5"
+      url "https://github.com/elwood-studio/cli/releases/download/0.1.44/elwood-macos-x64.zip"
+      sha256 "afd756babdfc9eba684949b9b104da13fb67fe88c6296dac934b00e60dade94a"
 
       def install
         bin.install "elwood"
@@ -25,16 +25,16 @@ class Elwood < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elwood-studio/cli/releases/download/0.1.37/elwood-linux-arm64.zip"
-      sha256 "d650b1f49d74fc4fe854ac2dc3e00add4f86937a85eb2518c8828f71e296c298"
+      url "https://github.com/elwood-studio/cli/releases/download/0.1.44/elwood-linux-arm64.zip"
+      sha256 "c1594e422f4b6666113d759bde3ff5c4d1a0e4ee1728dc5fbc1a6a9055fc25f8"
 
       def install
         bin.install "elwood"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/elwood-studio/cli/releases/download/0.1.37/elwood-linux-x64.zip"
-      sha256 "7e1ec98c6a200415500406df05aed7caa37facba2acbaafa0927e7373d1f90ff"
+      url "https://github.com/elwood-studio/cli/releases/download/0.1.44/elwood-linux-x64.zip"
+      sha256 "fe035ee6db7ffe30e353a8d9f152a226b488db0022c61d4d2afd1fcb13b8793b"
 
       def install
         bin.install "elwood"
